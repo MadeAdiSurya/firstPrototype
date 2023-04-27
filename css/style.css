@@ -24,8 +24,9 @@
 
 .wrapper h2 {
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 26px;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--black);
 }
 
 .wrapper p {
@@ -201,9 +202,16 @@ header .wrapper .nav .navbar-menu ul #submenu li:hover {
   width: 400px;
   color: var(--white);
 }
+
+.wrapper .hero .menu .menu-box h3 {
+  font-family: "Open Sans", sans-serif;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 24px;
+}
 .wrapper .hero .menu .menu-box.middle {
   background: var(--green);
-  border: 2px solid #288a32;
+  border: 2px solid #227c2b;
   position: relative;
 }
 
@@ -212,12 +220,12 @@ header .wrapper .nav .navbar-menu ul #submenu li:hover {
   right: -4.5%;
   top: 50%;
   font-size: 24px;
-  color: #288a32;
+  color: #227c2b;
 }
 
 .wrapper .hero .menu .menu-box:first-child {
   background: var(--red);
-  border: 2px solid rgb(250, 0, 0);
+  border: 2px solid rgb(185, 23, 23);
   position: relative;
 }
 
@@ -226,12 +234,12 @@ header .wrapper .nav .navbar-menu ul #submenu li:hover {
   right: -4.5%;
   top: 50%;
   font-size: 24px;
-  color: rgb(250, 0, 0);
+  color: rgb(185, 23, 23);
 }
 
 .wrapper .hero .menu .menu-box:last-child {
   background: var(--blue);
-  border: 2px solid #167ec4;
+  border: 2px solid #0c5281;
 }
 
 .wrapper .hero .menu .menu-box {
@@ -277,9 +285,8 @@ header .wrapper .nav .navbar-menu ul #submenu li:hover {
 .wrapper .contact .form-input #form {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--black);
-
   margin-bottom: 12px;
   width: 600px;
 }
@@ -301,15 +308,15 @@ header .wrapper .nav .navbar-menu ul #submenu li:hover {
 }
 
 .wrapper .contact .btn-submit {
-  margin-bottom: 12px;
-  width: 400px;
+  margin-bottom: 16px;
+  width: 600px;
   background: var(--blue);
-  padding: 10px;
+  padding: 16px;
   border: none;
 
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 18px;
   color: var(--white);
 
   cursor: pointer;
@@ -331,7 +338,7 @@ footer .wrapper {
 
 footer .wrapper .content h5 {
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   color: var(--white);
 }
@@ -341,10 +348,10 @@ footer .wrapper .social-media {
   height: 30%;
   display: flex;
   flex-direction: row;
+  margin: 12px 0;
 }
 
 footer .wrapper .social-media img {
   height: 20px;
-  margin-top: 6px;
   margin-right: 12px;
 }

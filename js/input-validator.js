@@ -1,6 +1,7 @@
 const nameError = document.getElementById("name-error");
 const emailError = document.getElementById("email-error");
 const messageError = document.getElementById("message-error");
+const btnSubmit = document.getElementsByClassName("btn-submit");
 
 function checkName() {
   let tempName = document.getElementById("get-name").value;
@@ -30,3 +31,20 @@ function checkMessage() {
     messageError.innerHTML = "";
   }
 }
+
+function clearInput() {
+  document.getElementById("get-name").value = "";
+  document.getElementById("get-email").value = "";
+  document.getElementById("get-message").value = "";
+}
+
+function pressButton() {
+  btnSubmit[0].addEventListener("click", function () {
+    checkName();
+    checkEmail();
+    checkMessage();
+    clearInput();
+  });
+}
+
+pressButton();

@@ -5,7 +5,7 @@
   --green: #6a996f;
   --black: #333333;
   --light-grey: #939393;
-  --hover: #f4f4f4;
+  --hover: rgb(214, 214, 214);
   --dark-grey: #444444;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .wrapper {
-  max-width: 1100px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0;
 }
@@ -57,12 +57,13 @@ header .wrapper .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 12px 0;
 }
 
 header .wrapper .nav .logo h3 {
   font-family: "Open Sans", sans-serif;
-  color: var(--black);
-  font-weight: 800;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
   font-size: 24px;
 }
 
@@ -90,7 +91,7 @@ header .wrapper .nav .navbar-menu ul #submenu {
 }
 
 header .wrapper .nav .navbar-menu ul #submenu li {
-  padding-top: 10px;
+  padding-top: 12px;
   background: var(--white);
 }
 

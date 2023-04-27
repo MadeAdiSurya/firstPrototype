@@ -3,6 +3,8 @@ const secondDot = document.getElementById("dot1");
 const rightArrow = document.getElementById("right-arrow");
 const leftArrow = document.getElementById("left-arrow");
 const slider = document.getElementsByClassName("slider");
+const sliderTextFirst = document.getElementsByClassName("slider-text first");
+const sliderTextSecond = document.getElementsByClassName("slider-text second");
 
 const Images = [];
 Images[0] = "url('../img/bg.jpg')";
@@ -57,8 +59,12 @@ function checkDot() {
   if (i == 0) {
     firstDot.classList.add("clicked");
     secondDot.classList.remove("clicked");
+    sliderTextFirst[0].classList.remove("hidden");
+    sliderTextSecond[0].classList.add("hidden");
   } else if (i == 1) {
     firstDot.classList.remove("clicked");
     secondDot.classList.add("clicked");
+    sliderTextFirst[0].classList.add("hidden");
+    sliderTextSecond[0].classList.remove("hidden");
   }
 }

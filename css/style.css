@@ -4,13 +4,90 @@
   --red: #ea7c6f;
   --green: #6a996f;
   --black: #333333;
+  --light-grey: #939393;
+  --hover: #f4f4f4;
+  --dark-grey: #444444;
 }
 
-.body {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
+  margin: 0;
 }
 
-.wrapper .top-hero .slider .input-icon .btn-slide {
-  color: black;
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  background: var(--white);
+}
+
+ul li {
+  list-style: none;
+  padding: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: var(--light-grey);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+header .wrapper .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .wrapper .nav .logo h3 {
+  font-family: "Raleway", sans-serif;
+  color: var(--black);
+  font-weight: 800;
   font-size: 24px;
+}
+
+header .wrapper .nav .navbar-menu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  position: relative;
+}
+
+header .wrapper .nav .navbar-menu ul li:hover {
+  background: var(--hover);
+}
+
+header .wrapper .nav .navbar-menu ul #submenu {
+  position: absolute;
+  display: block;
+  left: 0;
+}
+
+header .wrapper .nav .navbar-menu ul #submenu li {
+  padding-top: 10px;
+}
+
+header .wrapper .nav .navbar-menu ul #submenu li a {
+  color: var(--white);
+}
+
+header .wrapper .nav .navbar-menu ul #submenu li:hover {
+  background: var(--dark-grey);
+}
+
+.top-hero .slider {
+  background-image: url("../img/bg.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* display: flex;
+  align-items: center; */
 }

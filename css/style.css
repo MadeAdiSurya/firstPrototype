@@ -65,17 +65,24 @@ header .wrapper .nav .navbar-menu ul li:hover {
   background: var(--hover);
 }
 
+header .wrapper .nav .navbar-menu ul li:hover #submenu {
+  z-index: 100;
+}
+
 header .wrapper .nav .navbar-menu ul #submenu {
   position: absolute;
   display: block;
   left: 0;
+  z-index: -99;
+  transition: all ease;
 }
 
 header .wrapper .nav .navbar-menu ul #submenu li {
   padding-top: 10px;
+  background: var(--white);
 }
 
-header .wrapper .nav .navbar-menu ul #submenu li a {
+header .wrapper .nav .navbar-menu ul #submenu li a:hover {
   color: var(--white);
 }
 
@@ -88,6 +95,66 @@ header .wrapper .nav .navbar-menu ul #submenu li:hover {
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  /* display: flex;
-  align-items: center; */
+  position: relative;
+}
+
+.top-hero .slider .slider-text {
+  position: absolute;
+  padding: 12px;
+  background: #4444444f;
+  max-width: 700px;
+  left: 370px;
+  top: 70%;
+}
+
+.top-hero .slider .slider-text.first h1 {
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  font-size: 28px;
+}
+
+.top-hero .slider .slider-text.second {
+  display: none;
+}
+
+.top-hero .slider .btn-slide {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+  transition: 0.3s ease;
+}
+
+.top-hero .slider .btn-slide:hover {
+  color: var(--hover);
+}
+
+.top-hero .slider .btn-slide.right {
+  top: 50%;
+  right: 12px;
+}
+
+.top-hero .slider .btn-slide.left {
+  top: 50%;
+  left: 12px;
+}
+
+.top-hero .slider .dotbox {
+  display: flex;
+  gap: 6px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+}
+
+.top-hero .slider .dotbox .dot {
+  background: rgba(255, 255, 255, 0.5);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.top-hero .slider .dotbox .dot:hover {
+  background: var(--white);
 }

@@ -55,12 +55,10 @@ rightArrow.addEventListener("click", function () {
 
 function checkDot() {
   if (i == 0) {
-    firstDot.classList.add("active");
-    secondDot.classList.remove("active");
+    firstDot.classList.add("clicked");
+    secondDot.classList.remove("clicked");
   } else if (i == 1) {
-    firstDot.classList.remove("active");
-    secondDot.classList.add("active");
+    firstDot.classList.remove("clicked");
+    secondDot.classList.add("clicked");
   }
 }
-
-// window.onload = dotClicked;

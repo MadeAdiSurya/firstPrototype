@@ -2,6 +2,9 @@ const nameError = document.getElementById("name-error");
 const emailError = document.getElementById("email-error");
 const messageError = document.getElementById("message-error");
 const btnSubmit = document.getElementsByClassName("btn-submit");
+const refresh = document.createElement("a");
+
+refresh.setAttribute("href", "#");
 
 function checkName() {
   let tempName = document.getElementById("get-name").value;
@@ -29,6 +32,16 @@ function checkMessage() {
     messageError.innerHTML = "This field is required";
   } else {
     messageError.innerHTML = "";
+  }
+}
+
+function refreshPage() {
+  if (
+    nameError.innerHTML == "" &&
+    emailError.innerHTML == "" &&
+    messageError.innerHTML == ""
+  ) {
+    location.reload;
   }
 }
 

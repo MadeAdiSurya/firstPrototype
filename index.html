@@ -130,8 +130,31 @@
     <div class="wrapper">
       <section class="contact">
         <h2>CONTACT US</h2>
-
         <div class="form-input">
+          <form id="form">
+            <div class="input-group">
+              <label>Nama</label>
+              <input type="text" id="get-name" onkeyup="checkName()">
+              <span id="name-error"></span>
+            </div>
+
+            <div class="input-group">
+              <label>Email</label>
+              <input type="text" id="get-email" onkeyup="checkEmail()">
+              <span id="email-error"></span>
+            </div>
+
+              
+            <div class="input-group">
+              <label>Message</label>
+              <textarea  cols="30" rows="10" id="get-message" onkeyup="checkMessage()"></textarea>
+              <span id="message-error"></span>
+            </div>
+          </form>
+        </div>
+
+
+        <!-- <div class="form-input">
           <div class="content">
             <h4>Nama</h4>
             <form action="">
@@ -150,7 +173,7 @@
             <h4>Message</h4>
             <textarea name="" id="message" cols="30" rows="10"></textarea>
           </div>
-        </div>
+        </div> -->
 
         <button class="btn-submit" type="submit">SUBMIT</button>
       </section>
@@ -175,5 +198,6 @@
     </footer>
 
     <script src="js/slider.js"></script>
+    <script src="js/input-validator.js"></script>
   </body>
 </html>

@@ -7,8 +7,8 @@ const sliderTextFirst = document.getElementsByClassName("slider-text first");
 const sliderTextSecond = document.getElementsByClassName("slider-text second");
 
 const Images = [];
-Images[0] = "url("../img/bg.jpg")";
-Images[1] = "url("../img/about-bg.jpg")";
+Images[0] = "url(../img/bg.jpg')";
+Images[1] = "url('../img/about-bg.jpg')";
 
 let i = 0;
 

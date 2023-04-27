@@ -306,3 +306,37 @@ header .wrapper .nav .navbar-menu ul #submenu li:hover {
 
   cursor: pointer;
 }
+
+footer {
+  margin-top: 80px;
+  color: var(--white);
+  background: var(--black);
+}
+
+footer .wrapper {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .wrapper .content h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: var(--white);
+}
+
+footer .wrapper .social-media {
+  text-align: center;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+}
+
+footer .wrapper .social-media img {
+  height: 20px;
+  margin-top: 6px;
+  margin-right: 12px;
+}

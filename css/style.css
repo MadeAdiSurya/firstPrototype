@@ -1,0 +1,16 @@
+:root {
+  --white: #ffffff;
+  --blue: #5696c2;
+  --red: #ea7c6f;
+  --green: #6a996f;
+  --black: #333333;
+}
+
+.body {
+  box-sizing: border-box;
+}
+
+.wrapper .top-hero .slider .input-icon .btn-slide {
+  color: black;
+  font-size: 24px;
+}

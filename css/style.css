@@ -103,7 +103,7 @@ header .wrapper .nav .navbar-menu ul #submenu li:hover {
 }
 
 .top-hero .slider {
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/about-bg.jpg");
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,19 +113,19 @@ header .wrapper .nav .navbar-menu ul #submenu li:hover {
 .top-hero .slider .slider-text {
   position: absolute;
   padding: 12px;
-  background: #4444444f;
+  background: rgba(0, 0, 0, 0.5);
   max-width: 700px;
   left: 370px;
   top: 70%;
 }
 
-.top-hero .slider .slider-text.first h1 {
+.top-hero .slider .slider-text h1 {
   font-family: "Open Sans", sans-serif;
   color: var(--white);
   font-size: 28px;
 }
 
-.top-hero .slider .slider-text.second {
+.top-hero .slider .slider-text.hidden {
   display: none;
 }
 
@@ -168,6 +168,10 @@ header .wrapper .nav .navbar-menu ul #submenu li:hover {
 }
 
 .top-hero .slider .dotbox .dot:hover {
+  background: var(--white);
+}
+
+.top-hero .slider .dotbox .dot.clicked {
   background: var(--white);
 }
 
